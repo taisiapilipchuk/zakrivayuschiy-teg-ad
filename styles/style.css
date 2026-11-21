@@ -164,11 +164,6 @@
   line-height: 90%;
 }
 
-.button__save-icon {
-  width: 21px;
-  height: 21px;
-}
-
 .dialog {
   padding: 30px;
   width: clamp(341px, calc(336.775px + 1.127vw), 353px);
@@ -252,6 +247,8 @@
 }
 
 .button__save-icon {
+  width: 21px;
+  height: 21px;
   fill: currentColor;
   color: #000;
   position: relative;
@@ -332,6 +329,36 @@
 
 .like-icon.is-liked .sparks {
   animation: sparks 0.3s 0.3s ease-in;
+}
+
+/* фильтры изображений */
+
+.card:nth-child(1) .card__img {
+  filter: sepia(0.8);
+}
+
+.card:nth-child(2) .card__img {
+  filter: saturate(2);
+}
+
+.card:nth-child(3) .card__img {
+  filter: invert(1);
+}
+
+.card:nth-child(4) .card__img {
+  filter: hue-rotate(90deg);
+}
+
+.card:nth-child(5) .card__img {
+  filter: blur(2px);
+}
+
+.card:nth-child(6) .card__img {
+  filter: grayscale(1);
+}
+
+.card:nth-child(7) .card__img {
+  filter: contrast(150%) brightness(80%);
 }
 
 @media (width <= 376px) {
