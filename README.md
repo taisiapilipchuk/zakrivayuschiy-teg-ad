@@ -24,4 +24,3 @@
 ## Ссылки
 
 - [Репозиторий проекта](https://github.com/taisiapilipchuk/zakrivayuschiy-teg-ad)
-
