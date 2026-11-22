@@ -223,7 +223,7 @@
 
         <button
           type="button"
-          onclick="event.preventDefault(); document.getElementById('memory-dialog').showModal()"
+          onclick="document.getElementById('memory-dialog').showModal()"
           class="button_save"
         >
           <svg class="button__save-icon">
@@ -232,22 +232,20 @@
           <span class="button_save-text">Сохранить на память</span>
         </button>
 
-        <dialog class="dialog" id="memory-dialog">
-          <div class="dialog__content">
-            <svg class="dialog__save-icon" width="39" height="39">
-              <use href="./svg/icons.svg#icon-floppy"></use>
-            </svg>
-            <span class="dialog__description">Вставьте<br/>
-                                          дискету, чтобы продолжить</span>
-          </div>
-          <button
-            type="button"
-            onclick="event.preventDefault(); document.getElementById('memory-dialog').close()"
-            class="dialog__button button_save"
-          >
+      <dialog class="dialog" id="memory-dialog">
+        <div class="dialog__content">
+          <svg class="dialog__save-icon" width="39" height="39">
+            <use href="./svg/icons.svg#icon-floppy"></use>
+          </svg>
+          <span class="dialog__description">Вставьте<br/>
+                                        дискету, чтобы продолжить</span>
+        </div>
+        <form method="dialog">
+          <button class="dialog__button button_save" type="submit">
             <span class="dialog__button-text">ok</span>
           </button>
-        </dialog>
+        </form>
+      </dialog>
 
       </div>
     </main>
