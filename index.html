@@ -222,9 +222,9 @@
         </section>
 
         <button
-          onclick="document.getElementById('memory-dialog').showModal()"
-          class="button_save"
           type="button"
+          onclick="event.preventDefault(); document.getElementById('memory-dialog').showModal()"
+          class="button_save"
         >
           <svg class="button__save-icon">
             <use href="./svg/icons.svg#icon-floppy"></use>
@@ -241,9 +241,9 @@
                                           дискету, чтобы продолжить</span>
           </div>
           <button
-            onclick="document.getElementById('memory-dialog').close()"
-            class="dialog__button button_save"
             type="button"
+            onclick="event.preventDefault(); document.getElementById('memory-dialog').close()"
+            class="dialog__button button_save"
           >
             <span class="dialog__button-text">ok</span>
           </button>
